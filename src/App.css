@@ -1,0 +1,12 @@
+#root {
+  max-width: 1440px;
+  /* padding: 2rem; */
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 600px;
+}

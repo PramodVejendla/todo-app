@@ -1,0 +1,15 @@
+#root {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  /* display: flex; */
+  /* place-items: center; */
+  background-image: url("./assets/images/bg-desktop-light.jpg");
+  background-repeat: no-repeat;
+  object-fit: cover;
+
+  background-color: hsl(236, 33%, 92%);
+}
