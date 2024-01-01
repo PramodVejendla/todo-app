@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 #root {
   font-family: "Josefin Sans", sans-serif;
 }
@@ -5,8 +9,10 @@
 body {
   min-width: 320px;
   min-height: 100vh;
-  /* display: flex; */
-  /* place-items: center; */
+  padding: 0;
+  margin: 0;
+  /* display: flex;
+  place-items: center; */
   background-image: url("./assets/images/bg-desktop-light.jpg");
   background-repeat: no-repeat;
   object-fit: cover;
