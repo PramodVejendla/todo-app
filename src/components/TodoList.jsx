@@ -11,48 +11,16 @@ const checkboxStyles =
 const checkboxSelected =
   "cursor-pointer w-6 h-6 p-1 bg-gradient-to-br from-violet-500 to-fuchsia-500 rounded rounded-full border border-2";
 
-function TodoList() {
+function TodoList({ title }) {
   return (
     <div>
       <ul>
         <div className={listStyles}>
           <input type="checkbox" className="hidden" />
           <img src={CheckIcon} className={checkboxStyles} />
-          <li className={list}>Complete online React course</li>
+          <li className={list}>{title}</li>
           <button>
             <img src={closeBtn} alt="closeBtn" className={closeBtnStyles} />
-          </button>
-        </div>
-        <div className={listStyles}>
-          <input type="checkbox" className="hidden" />
-          <img src={CheckIcon} className={checkboxStyles} />
-          <li className={list}>10 minutes meditation</li>
-          <button>
-            <img src={closeBtn} className={closeBtnStyles} />
-          </button>
-        </div>
-        <div className={listStyles}>
-          <input type="checkbox" className="hidden" />
-          <img src={CheckIcon} className={checkboxStyles} />
-          <li className={list}>Read for 1 hour</li>
-          <button>
-            <img src={closeBtn} className={closeBtnStyles} />
-          </button>
-        </div>
-        <div className={listStyles}>
-          <input type="checkbox" className="hidden" />
-          <img src={CheckIcon} className={checkboxStyles} />
-          <li className={list}>Pickup groceries</li>
-          <button>
-            <img src={closeBtn} className={closeBtnStyles} />
-          </button>
-        </div>
-        <div className={listStyles}>
-          <input type="checkbox" className="hidden" />
-          <img src={CheckIcon} className={checkboxStyles} />
-          <li className={list}>Jog around the park 3x</li>
-          <button>
-            <img src={closeBtn} className={closeBtnStyles} />
           </button>
         </div>
       </ul>
