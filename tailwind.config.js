@@ -6,6 +6,10 @@ export default {
       minWidth: {
         128: "32rem",
       },
+      backgroundImage: {
+        "hero-pattern": "url('/assets/images/bg-desktop-light.jpg)",
+        // 'footer-texture': "url('/img/footer-texture.png')",
+      },
     },
     letterSpacing: {
       tightest: "-.075em",
