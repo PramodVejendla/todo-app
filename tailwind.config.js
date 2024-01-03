@@ -7,7 +7,7 @@ export default {
         128: "32rem",
       },
       backgroundImage: {
-        "hero-pattern": "url('/assets/images/bg-desktop-light.jpg)",
+        "check-icon": "url('/assets/images/icon-check.svg')",
         // 'footer-texture': "url('/img/footer-texture.png')",
       },
     },

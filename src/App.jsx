@@ -16,6 +16,8 @@ const DummyTodos = [
 function App() {
   const [todos, setTodos] = useState(DummyTodos);
 
+  const todosLeft = todos.length;
+
   const newTodoHandler = (newTodo) => {
     setTodos((prevTodos) => {
       return [newTodo, ...prevTodos];
@@ -24,16 +26,29 @@ function App() {
     // console.log(todos);
   };
 
+  const deleteTodoHandler = (id) => {
+    const updatedTodoList = todos.filter((item) => item.id !== id);
+    setTodos(updatedTodoList);
+  };
+
   return (
     <div className=" pt-32 hero-pattern">
       <Header />
       <TodoInputBox onSaveTodo={newTodoHandler} />
       <div className="bg-white rounded px-4 pt-2">
         {todos.map((item) => {
-          return <TodoList key={item.id} id={item.id} title={item.title} />;
+          return (
+            <TodoList
+              key={item.id}
+              id={item.id}
+              title={item.title}
+              deleteTodo={() => deleteTodoHandler(item.id)}
+              // completedTodo={() => completedTodohandler(item.id)}
+            />
+          );
         })}
 
-        <Footer />
+        <Footer todosLeft={todosLeft} />
       </div>
     </div>
   );
